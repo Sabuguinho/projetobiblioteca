@@ -19,10 +19,10 @@ export class CadastroLivro implements OnInit{
 
     ngOnInit(){
         this.form = this.fb.group({
-            nome: [],
-            autor: [],
-            numRegistro: [],
-            locado: [null]
+            nome: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(100)])],
+            autor: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(100)])],
+            numRegistro: ['', Validators.required],
+            locado: [false]
         });
     }
 }

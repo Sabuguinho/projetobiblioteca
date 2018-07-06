@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormBuilder } from "@angular/forms";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { Pessoa } from "../../model/pessoa";
 import { Router } from "@angular/router";
 
@@ -19,13 +19,13 @@ export class CadastroAluno implements OnInit{
 
     ngOnInit(){
         this.form = this.fb.group({
-            numeroMatricula: [],
-            nome: [],
-            cpf: [],
-            telefone: [],
-            rg: [],
-            rua: [],
-            numero: []
+            numeroMatricula: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(20)])],
+            nome: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(250)])],
+            cpf: ['', Validators.compose([Validators.required, Validators.maxLength(20)])],
+            telefone: ['', Validators.compose([Validators.required, Validators.minLength(8), Validators.maxLength(25)])],
+            rg: ['', Validators.compose([Validators.required, Validators.maxLength(20)])],
+            rua: ['', Validators.compose([Validators.required, Validators.maxLength(100)])],
+            numero: ['', Validators.compose([Validators.required, Validators.maxLength(10)])]
         })
     }
 }
