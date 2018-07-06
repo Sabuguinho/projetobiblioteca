@@ -25,4 +25,9 @@ export class CadastroLivro implements OnInit{
             locado: [false]
         });
     }
+
+    public salvar(){
+        console.log();
+        this.ngOnInit();
+    }
 }
