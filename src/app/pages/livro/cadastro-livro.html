@@ -1,27 +1,27 @@
 <form [formGroup]="form">
-        <mat-card>
-            <mat-card-title>
-                Cadastro de Livros:
-            </mat-card-title>
-            <mat-card-content>
-                    <div fxLayout="column">
-                        <div fxLayout="row">
-                            <mat-form-field>
-                                <input matInput placeholder="Nome:" [(ngModel)]="livro.nome" formControlName="nome"/>
-                            </mat-form-field>
-                            <mat-form-field>
-                                <input matInput placeholder="Autor:" [(ngModel)]="livro.autor" formControlName="autor"/>
-                            </mat-form-field>
-                            <mat-form-field>
-                                <input matInput placeholder="Número de Registro" [(ngModel)]="livro.numRegistro" formControlName="numRegistro"/>
-                            </mat-form-field>
-                        </div>
-                        <div fxLayout="row">
-                            <mat-checkbox [(ngModel)]="livro.locado" formControlName="locado">
-                                Locado
-                            </mat-checkbox>
-                        </div>
-                    </div>
-            </mat-card-content>
-        </mat-card>
-    </form>
+    <mat-card>
+        <mat-card-title>
+            Cadastro de Livros:
+        </mat-card-title>
+        <mat-card-content>
+            <div fxLayout="column">
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Nome:" [(ngModel)]="livro.nome" formControlName="nome" />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Autor:" [(ngModel)]="livro.autor" formControlName="autor" />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Número de Registro" [(ngModel)]="livro.numRegistro" formControlName="numRegistro" />
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <mat-checkbox [(ngModel)]="livro.locado" formControlName="locado">
+                        Locado
+                    </mat-checkbox>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</form>

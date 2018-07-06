@@ -1,0 +1,58 @@
+<form  [formGroup]="form">
+    <mat-card>
+        <mat-card-title>
+            Cadastro de Alunos
+        </mat-card-title>
+        <mat-card-content>
+            <div fxLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="Numero De Matricula:" [(ngModel)]="pessoa.numeroMatricula" />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="Nome:" [(ngModel)]="pessoa.nome" />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="CPF:" [(ngModel)]="pessoa.cpf" />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="Telefone:" [(ngModel)]="pessoa.telefone" />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="RG:" [(ngModel)]="pessoa.rg" />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="Rua:" [(ngModel)]="pessoa.rua" />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div f  xLayout="collun">
+                <div fxLayout "row">
+                    <mat-form-field>
+                        <input matInput placeholder="Numero:" [(ngModel)]="pessoa.numero" />
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    </form>
