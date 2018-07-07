@@ -1,27 +1,34 @@
+<div id="principal">
 <form [formGroup]="form">
-    <mat-card>
+    <mat-card class="conteudo">
         <mat-card-title>
-            Login
+            Entrar
         </mat-card-title>
         <mat-card-content>
-            <div fxLayout="collun">
-                <div fxLayout="row">
-                    <mat-form-field>
+            <div fxLayout="column"  fxFlex="40%">
+                <div fxLayout="column">
+                    <mat-form-field >
                         <input matInput placeholder="Login:" [(ngModel)]="pessoa.login" formControlName="login" >
                     </mat-form-field>
                 </div>
-                <div fxLayout="row">
+                <span fxFlex="2%"></span>
+                <div fxLayout="column">
                     <mat-form-field>
                         <input matInput placeholder="Senha:" [(ngModel)]="pessoa.senha" formControlName="senha" >
                     </mat-form-field>
             </div>
-                <div fxLayout="row">
+            <span fxFlex="2%"></span>
+                <div fxLayout="column">
                     <mat-form-field>
                         <input matInput placeholder="Email:" [(ngModel)]="pessoa.email" formControlName="email">
                     </mat-form-field>
+                </div>
+                <div>
+                    <button mat-raised-button style="color:blue">Salvar</button>
                 </div>
             </div>
 
         </mat-card-content>
     </mat-card>
     </form>
+</div>    
