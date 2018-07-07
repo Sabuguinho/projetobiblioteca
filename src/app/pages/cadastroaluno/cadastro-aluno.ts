@@ -28,4 +28,9 @@ export class CadastroAluno implements OnInit{
             numero: ['', Validators.compose([Validators.required, Validators.maxLength(10)])]
         })
     }
+
+    public salvar(){
+        console.log();
+        this.ngOnInit();
+    }
 }
