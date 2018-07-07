@@ -19,18 +19,20 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { AppComponent } from './app.component';
 import {MatInputModule} from '@angular/material/input';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import {MatMenuModule} from '@angular/material/menu';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { AppRouter} from './app-router';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { Menu } from 'src/app/menu/menu';
+
 import { PesquisaLivro } from 'src/app/pages/livro/pesquisa-livro';
+import { Sidenav } from './componentes/sidenav/sidenav';
 
 @NgModule({
   declarations: [
-    AppComponent, CadastroLivro,CadastroAluno,Login,Menu,PesquisaLivro
+    AppComponent, CadastroLivro,CadastroAluno,Login,Sidenav,PesquisaLivro
   ],
   imports: [
     BrowserModule,        MatExpansionModule,
@@ -42,7 +44,7 @@ import { PesquisaLivro } from 'src/app/pages/livro/pesquisa-livro';
     MatDatepickerModule, MatNativeDateModule,
     MatButtonModule, MatCheckboxModule, MatSelectModule,
     MatAutocompleteModule, MatInputModule, MatFormFieldModule,
-    FormsModule,MatSliderModule,MatTabsModule
+    FormsModule,MatSliderModule,MatTabsModule, MatMenuModule
 
   ],
   providers: [],
