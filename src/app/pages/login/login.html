@@ -1,27 +1,27 @@
-<form [formGrup]="form">
+<form [formGroup]="form">
     <mat-card>
         <mat-card-title>
             Login
         </mat-card-title>
         <mat-card-content>
             <div fxLayout="collun">
-                <div fxLayout "row">
+                <div fxLayout="row">
                     <mat-form-field>
-                        <input matInput placeholder="Login:" [(ngModel)]="pessoa.login" />
+                        <input matInput placeholder="Login:" [(ngModel)]="pessoa.login" formControlName="login" >
                     </mat-form-field>
                 </div>
-            </div>
-            <div fxLayout="collun">
-                <div fxLayout "row">
+                <div fxLayout="row">
                     <mat-form-field>
-                        <input matInput placeholder="Senha:" [(ngModel)]="pessoa.senha" />
+                        <input matInput placeholder="Senha:" [(ngModel)]="pessoa.senha" formControlName="senha" >
+                    </mat-form-field>
+            </div>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Email:" [(ngModel)]="pessoa.email" formControlName="email">
                     </mat-form-field>
                 </div>
             </div>
 
         </mat-card-content>
-
-
     </mat-card>
-
     </form>

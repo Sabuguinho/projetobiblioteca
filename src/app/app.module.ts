@@ -25,14 +25,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { AppRouter} from './app-router';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { CadastroCliente } from './pages/cadastrarcliente/cadastro-cliente';
-import { CadastroUsuario } from './pages/cadastrarusuario/cadastro-usuario';
-import { AlterarSenha } from './pages/alterarsenha/alterar-senha';
-import { Menu } from './componentes/menu/menu';
+import { Menu } from 'src/app/menu/menu';
+import { PesquisaLivro } from 'src/app/pages/livro/pesquisa-livro';
 
 @NgModule({
   declarations: [
-    AppComponent, CadastroLivro,CadastroAluno,Login,Menu
+    AppComponent, CadastroLivro,CadastroAluno,Login,Menu,PesquisaLivro
   ],
   imports: [
     BrowserModule,        MatExpansionModule,

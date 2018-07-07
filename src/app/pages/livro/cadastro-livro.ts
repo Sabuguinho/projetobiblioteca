@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'cadastro-livro',
-    styleUrls: ['cadastro-livro.scss'],
+    styleUrls: ['cadastro-livro.scss'], 
     templateUrl: 'cadastro-livro.html'
 })
 export class CadastroLivro implements OnInit{

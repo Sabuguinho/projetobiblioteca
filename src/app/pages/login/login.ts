@@ -7,7 +7,7 @@ import { Pessoa } from "../../model/pessoa";
 @Component({
     selector: 'login',
     templateUrl: 'login.html',
-    styleUrls: ['login.scss']
+    styleUrls: ['login.scss'] 
 })
 export class Login implements OnInit{
 

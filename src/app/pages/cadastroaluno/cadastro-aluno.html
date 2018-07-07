@@ -5,51 +5,46 @@
         </mat-card-title>
         <mat-card-content>
             <div fxLayout="collun">
-                <div fxLayout "row">
+                <div fxLayout="row">
                     <mat-form-field>
-                        <input matInput placeholder="Numero De Matricula:" [(ngModel)]="pessoa.numeroMatricula" />
+                        <input matInput placeholder="Numero De Matricula:" [(ngModel)]="pessoa.numeroMatricula" formControlName="numeroMatricula" />
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Nome:" [(ngModel)]="pessoa.nome" formControlName="nome"/>
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="CPF:" [(ngModel)]="pessoa.cpf" formControlName="cpf"/>
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Telefone:" [(ngModel)]="pessoa.telefone" formControlName="telefone"/>
                     </mat-form-field>
                 </div>
             </div>
             <div fxLayout="collun">
-                <div fxLayout "row">
+                <div fxLayout="row">
                     <mat-form-field>
-                        <input matInput placeholder="Nome:" [(ngModel)]="pessoa.nome" />
+                        <input matInput placeholder="RG:" [(ngModel)]="pessoa.rg" formControlName="rg"/>
                     </mat-form-field>
                 </div>
-            </div>
-            <div fxLayout="collun">
-                <div fxLayout "row">
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
                     <mat-form-field>
-                        <input matInput placeholder="CPF:" [(ngModel)]="pessoa.cpf" />
+                        <input matInput placeholder="Rua:" [(ngModel)]="pessoa.rua" formControlName="rua"/>
                     </mat-form-field>
                 </div>
-            </div>
-            <div fxLayout="collun">
-                <div fxLayout "row">
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
                     <mat-form-field>
-                        <input matInput placeholder="Telefone:" [(ngModel)]="pessoa.telefone" />
-                    </mat-form-field>
-                </div>
-            </div>
-            <div fxLayout="collun">
-                <div fxLayout "row">
-                    <mat-form-field>
-                        <input matInput placeholder="RG:" [(ngModel)]="pessoa.rg" />
-                    </mat-form-field>
-                </div>
-            </div>
-            <div fxLayout="collun">
-                <div fxLayout "row">
-                    <mat-form-field>
-                        <input matInput placeholder="Rua:" [(ngModel)]="pessoa.rua" />
-                    </mat-form-field>
-                </div>
-            </div>
-            <div f  xLayout="collun">
-                <div fxLayout "row">
-                    <mat-form-field>
-                        <input matInput placeholder="Numero:" [(ngModel)]="pessoa.numero" />
+                        <input matInput placeholder="Numero:" [(ngModel)]="pessoa.numero" formControlName="numero"/>
                     </mat-form-field>
                 </div>
             </div>

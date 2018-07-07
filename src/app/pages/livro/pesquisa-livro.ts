@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     templateUrl: 'pesquisa-livro.scss',
     styleUrls: ['pesquisa-livro.scss']
 })
-export class PesquisaLivro{
+export class PesquisaLivro{ 
 
     constructor(){
         
