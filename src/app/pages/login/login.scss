@@ -1,0 +1,19 @@
+#principal{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    .conteudo{
+        position: absolute;
+        left: 1%;
+        right: 50%;
+        top: 0;
+        bottom: 50%;
+    }
+    .button{
+        left: 0%;
+    }
+}
