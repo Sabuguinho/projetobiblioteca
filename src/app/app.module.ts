@@ -29,7 +29,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 import { PesquisaLivro } from 'src/app/pages/livro/pesquisa-livro';
 import { Sidenav } from './componentes/sidenav/sidenav';
-
+import { LivroService } from './service/livro.service';
+import { AlunoService } from './service/aluno.service'; 
+import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent, CadastroLivro,CadastroAluno,Login,Sidenav,PesquisaLivro
@@ -38,6 +41,8 @@ import { Sidenav } from './componentes/sidenav/sidenav';
     BrowserModule,        MatExpansionModule,
     MatListModule,
     MatSidenavModule,
+    HttpClientModule,
+    HttpModule,
     AppRouter,FlexLayoutModule,
     MatCardModule,BrowserAnimationsModule,
     BrowserModule,ReactiveFormsModule,
@@ -47,7 +52,8 @@ import { Sidenav } from './componentes/sidenav/sidenav';
     FormsModule,MatSliderModule,MatTabsModule, MatMenuModule
 
   ],
-  providers: [],
+  providers: [LivroService, AlunoService, 
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
